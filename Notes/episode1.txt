@@ -1,0 +1,41 @@
+      <script>
+
+        const heading=document.createElement("h1");
+        heading.innerHTML="Hello World from Javascript";
+        const root=document.getElementById("root");
+        root.appendChild(heading);
+
+      </script> -->
+
+
+Usually how we create the element
+
+const heading=document.createElement("h1");
+heading.innerHTML="Hello World from Javascript";
+const root=document.getElementById("root");
+root.appendChild(heading);
+
+And attach above code to root 
+
+Then we import react CDN
+
+const heading = React.createElement(
+  "h1",
+  { id: "heading" },
+  "I am writing from react"
+);
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(heading);
+
+Important points to remember is 
+
+// Where heading is not h1 tag but object is react element
+/**
+ * If we have more than nested html - we create element one inside the other
+ * And then when we have multiple children - we create element inside the array
+ * But in react we should have only one parent object that will be passed inside the object
+ * we have something called as Key- will check it later
+ */

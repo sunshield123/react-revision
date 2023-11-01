@@ -1,0 +1,30 @@
+npm init -> Will produce package json file 
+
+bundler -> webpack and parcel -> Bundles app nicely to ship to production
+
+-D -> 1) Dev Dependency vs normal Dependency
+
+
+Steps to install React
+npm install parcel
+npm install react
+npm install react-dom
+
+
+#Importance of parcel
+- Dev Build
+- local server
+- HMR
+- File Watching
+- Caching
+- Minification
+- Bundling
+- Compress
+- Consistent Hashing
+- code splitting
+- Tree shaking - remove unused code
+
+Dist - holds the app that will be created during the build
+Code to run the project -
+
+    npx parcel build index.html
